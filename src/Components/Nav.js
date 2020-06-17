@@ -4,11 +4,11 @@ import '../App.css';
 function Nav() {
   return (
     <nav>
-        <h3>Logo</h3>
+        <h3>bryce.</h3>
         <ul>
-            <li>Work</li>
-            <li>About</li>
-            <li>Contact</li>
+            <li>work.</li>
+            <li>about.</li>
+            <li>contact.</li>
         </ul>
     </nav>
   );
