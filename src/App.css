@@ -1,3 +1,9 @@
 .App {
   text-align: center;
 }
+.custom-nav-bg {
+  background-color: #0f0f0f;
+}
+.custome-nav-bg #responsive-navbar-nav {
+  color: white;
+}
