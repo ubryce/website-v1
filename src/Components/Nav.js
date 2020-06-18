@@ -15,9 +15,9 @@ function Navs() {
             </div>
             <div className="nav-wrapper">
                 <ul>
-                    <li><a style={{ textDecoration: 'none' }} href="/">work.</a></li>
-                    <li><a style={{ textDecoration: 'none' }} href="/">about.</a></li>
-                    <li><a style={{ textDecoration: 'none' }} href="/">contact.</a></li>
+                    <li><a style={{ textDecoration: 'none' }} href="/">work<span>.</span></a></li>
+                    <li><a style={{ textDecoration: 'none' }} href="/">about<span>.</span></a></li>
+                    <li><a style={{ textDecoration: 'none' }} href="/">contact<span>.</span></a></li>
                 </ul>
             </div>
         </nav>

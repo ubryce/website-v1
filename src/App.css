@@ -35,6 +35,9 @@ nav ul li {
   position: relative;
   text-decoration: none;
 }
+nav ul li span {
+  font-weight: 700;
+}
 
 nav ul li:not(:first-child) {
   margin-left: 40px;
