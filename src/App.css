@@ -22,6 +22,7 @@ nav {
   letter-spacing: 0px;
   text-decoration: none;
   letter-spacing: 1.2px;
+  transition: all 0.3s ease-out;
 }
 
 nav ul {
@@ -41,7 +42,7 @@ nav ul li span {
 }
 
 nav ul li:not(:first-child) {
-  margin-left: 40px;
+  margin-left: 30px;
 }
 
 nav ul li:last-child {
@@ -114,7 +115,7 @@ nav ul li a {
         padding: 10px 24px;
         opacity: 0;
         color:white;
-        font-size: 14px;
+        font-size: 18px;
         font-weight: 600;
         letter-spacing: 1.2px;
         transform: translateX(-20px);
@@ -192,9 +193,47 @@ nav ul li a {
   display: none;
 }
 
-.display {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
+.line {
+  width: 24em;
+  top: 50%;
+  margin: auto;
+  border-right: 2px solid rgba(255, 255, 255, 0.75);
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(-50%);
+}
+
+.anim-typewriter {
+  animation: typewriter 4s steps(40) 1s 1 normal both,
+  blinkTextCussor 500ms steps(40) infinite normal;
+}
+
+@keyframes typewriter {
+  from {
+      width: 0;
+  }
+  to {
+      width: 11em;
+  }
+}
+
+@media(max-width: 768px) {
+  @keyframes typewriter {
+      from {
+          width: 0;
+      }
+      to {
+          width: 11em;
+      }
+  }
+}
+
+@keyframes blinkTextCussor {
+  from {
+      border-right-color: rgba(255, 255, 255, 0.75);
+  }
+  to {
+      border-right-color: transparent;
+  }
 }
