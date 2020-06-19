@@ -2,6 +2,7 @@
 .App {
   text-align: center;
 }
+
 nav {
   height: 60px;
   width: 100%;
@@ -207,6 +208,11 @@ nav ul li a {
 .anim-typewriter {
   animation: typewriter 4s steps(40) 1s 1 normal both,
   blinkTextCussor 500ms steps(40) infinite normal;
+  color: #fff;
+  font-weight: 300;
+  font-size: 18px;
+  text-decoration: none;
+  letter-spacing: 1.2px;
 }
 
 @keyframes typewriter {
