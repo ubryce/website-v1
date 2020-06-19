@@ -4,9 +4,9 @@ import '../App.css';
 function Display() {
   return (
     <div>
-    <div class="hero">
-          <div class="header">
-              <h1 class="line anim-typewriter">software developer.</h1>
+    <div className="hero">
+          <div className="header">
+              <h1 className="line anim-typewriter">software developer.</h1>
           </div>
       </div>
 
