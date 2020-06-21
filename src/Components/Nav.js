@@ -27,7 +27,7 @@ class Navs extends React.Component {
     console.log(this.state);
   return (
     <nav className={this.state.show ? "active" : "hidden"}>
-            <input type="checkbox" id="nav" className="hidden"></input>
+            <input type="checkbox" id="nav" className="hiddens"></input>
             <label for="nav" className="nav-btn">
                 <i></i>
                 <i></i>
