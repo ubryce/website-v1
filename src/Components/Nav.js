@@ -6,27 +6,27 @@ class Navs extends React.Component {
   constructor() {
     super();
     this.state = {
-      show: true,
-      scrollPos: 0
+      scrolled:false,
     };
   }
   componentDidMount() {
-    window.addEventListener("scroll", this.handleScroll);
+    window.addEventListener("scroll", () => {
+      const isTop = window.scrollY < 100;
+      if(isTop !== true){
+        this.setState({ scrolled: true});
+      } else {
+        this.setState({ scrolled: false});
+      }
+    });
   }
   componentWillUnmount() {
-    window.removeEventListener("scroll", this.handleScroll);
+    window.removeEventListener("scroll");
   }
-  handleScroll = () => {
-    // console.log(document.body.getBoundingClientRect());
-    this.setState({
-      scrollPos: document.body.getBoundingClientRect().top,
-      show: document.body.getBoundingClientRect().top > this.state.scrollPos
-    });
-  };
+  
   render() {
-    console.log(this.state);
+    
   return (
-    <nav className={this.state.show ? "active" : "hidden"}>
+    <nav className={this.state.scrolled ? "navs scrolled" : "navs"}>
             <input type="checkbox" id="nav" className="hiddens"></input>
             <label for="nav" className="nav-btn">
                 <i></i>

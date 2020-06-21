@@ -4,9 +4,11 @@
 }
 
 nav {
-  height: 80px;
+  height: 60px;
   width: 100%;
+  position: fixed;
 }
+
 
 .logo {
   float: left;
@@ -134,6 +136,7 @@ nav ul li a {
         cursor: pointer;
         z-index: 9999;
         border-radius: 50%;
+        top: 15px;
   }
 
   .nav-btn i {
