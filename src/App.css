@@ -9,6 +9,10 @@ nav {
   position: fixed;
 }
 
+.scrolled {
+  position: fixed;
+  background-color: #0f0f0f;
+}
 
 .logo {
   float: left;

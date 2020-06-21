@@ -3,6 +3,7 @@ import '../App.css';
 
 class Navs extends React.Component {
 
+  /*
   constructor() {
     super();
     this.state = {
@@ -21,12 +22,12 @@ class Navs extends React.Component {
   }
   componentWillUnmount() {
     window.removeEventListener("scroll");
-  }
+  }*/
   
   render() {
     
   return (
-    <nav className={this.state.scrolled ? "navs scrolled" : "navs"}>
+    <nav /*className={this.state.scrolled ? "navs scrolled" : "navs"}*/>
             <input type="checkbox" id="nav" className="hiddens"></input>
             <label for="nav" className="nav-btn">
                 <i></i>
