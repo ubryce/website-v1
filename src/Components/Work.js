@@ -3,7 +3,7 @@ import './CSS/Work.css';
 
 function Work() {
   return (
-    <div>
+    <div className="work">
       <div className="cursor"></div>
       <div className="wrapper">
         <div className="project-list">
