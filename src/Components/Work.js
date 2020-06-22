@@ -3,28 +3,49 @@ import './CSS/Work.css';
 
 function Work() {
   return (
-    <div className="work">
-      <div className="cursor"></div>
-      <div className="wrapper">
-        <div className="project-list">
-          <div className="project p-1">
-            <div className="project-title"><h1>Moodroid</h1></div>
-            <div className="project-categ">Android App</div>
-            <div className="project-overlay"></div>
-          </div>
-          <div className="project p-2">
-            <div className="project-title"><h1>Blockchain Transactions v2</h1></div>
-            <div className="project-categ">Web App</div>
-            <div className="project-overlay"></div>
-          </div>
-          <div className="project p-3">
-            <div className="project-title"><h1>IDK</h1></div>
-            <div className="project-categ">IDK</div>
-            <div className="project-overlay"></div>
-          </div>
+
+    <div>
+      <div className="container-fluid">
+        <br></br><br></br>
+
+        <h6>featured projects</h6>
+
+        <div className="vertical"></div>
+        <br></br>
+
+        <div className="whitespace"></div>
+        <div className="whitespace"></div>
+
+        <div className="row">
+            <div className="col-lg-8"></div>
+
+            <div className="col-lg-4 project project1 wow fadeInUp" data-wow-delay="0.2s" onclick="location.href='project.html'"></div>
         </div>
+
+        <div className="whitespace"></div>
+
+        <div className="row">
+            <div className="col-lg-6 project project2 wow fadeInUp" data-wow-delay="0.2s" onclick="location.href='project.html'"></div>
+        
+            <div className="col-lg-6"></div>
+        </div>
+
+        <div className="whitespace"></div>
+
+        <div className="row">
+            <div className="col-lg-7"></div>
+
+            <div className="col-lg-4 project project3 wow fadeInUp" data-wow-delay="0.2s" onclick="location.href='project.html'"></div>
+        
+            <div className="col-lg-1"></div>
+        </div>
+
+        <div className="whitespace"></div>
       </div>
     </div>
+
+   
+
   );
 }
 
