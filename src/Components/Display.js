@@ -10,7 +10,7 @@ function Display() {
           </div>
       </div>
 
-    <div class="scroll-down"></div>
+    <div className="scroll-down"></div>
     </div>
   );
 }
